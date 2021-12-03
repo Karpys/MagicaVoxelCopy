@@ -97,7 +97,7 @@ public class ClickCreateCube : MonoBehaviour
     {
         for (int i = 0; i < NumberCube; i++)
         {
-            PreviewObjects[i].transform.position = Position + Normal*(i+1);
+            PreviewObjects[i].transform.position = Position + (Normal.normalized*(i+1));
         }
     }
 
